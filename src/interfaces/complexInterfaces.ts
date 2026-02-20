@@ -1,17 +1,17 @@
+interface Client {
+  name: string;
+  age?: number;
+  address: Address;
+  getFullAddress(id: string, city: string): string;
+}
+
+interface Address {
+  id: number;
+  zip: string;
+  city: string;
+}
+
 export const complexInterfaces = (): void => {
-  interface Client {
-    name: string;
-    age?: number;
-    address: Address;
-    getFullAddress(id: string, city: string): string;
-  }
-
-  interface Address {
-    id: number;
-    zip: string;
-    city: string;
-  }
-
   const Client: Client = {
     name: "René Rivas",
     age: 35,
