@@ -3,6 +3,7 @@ export const complexInterfaces = (): void => {
     name: string;
     age?: number;
     address: Address;
+    getFullAddress(id: string, city: string): string;
   }
 
   interface Address {
@@ -18,6 +19,9 @@ export const complexInterfaces = (): void => {
       id: 200810940,
       zip: "1010a",
       city: "Caracas, Venezuela",
+    },
+    getFullAddress(id: string, city: string): string {
+      return `${id} - ${city}`;
     },
   };
 
