@@ -1,3 +1,5 @@
+import { basicInterfaces } from "./interfaces/basicInterfaces";
+import { complexInterfaces } from "./interfaces/complexInterfaces";
 import "./style.css";
 
 document.querySelector<HTMLDivElement>("#app")!.innerHTML = /* html */ `
@@ -5,3 +7,6 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = /* html */ `
     <h1>TypeScript's Interfaces</h1>
   </div>
 `;
+
+basicInterfaces();
+complexInterfaces();
