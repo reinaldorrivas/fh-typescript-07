@@ -1,5 +1,6 @@
 import { basicInterfaces } from "./interfaces/basicInterfaces";
 import { complexInterfaces } from "./interfaces/complexInterfaces";
+import { typedClasses } from "./interfaces/typedClasses";
 import "./style.css";
 
 document.querySelector<HTMLDivElement>("#app")!.innerHTML = /* html */ `
@@ -10,3 +11,4 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = /* html */ `
 
 basicInterfaces();
 complexInterfaces();
+typedClasses();
