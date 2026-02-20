@@ -12,7 +12,7 @@ interface Address {
 }
 
 export const complexInterfaces = (): void => {
-  const Client: Client = {
+  const client: Client = {
     name: "René Rivas",
     age: 35,
     address: {
@@ -25,7 +25,7 @@ export const complexInterfaces = (): void => {
     },
   };
 
-  console.log(Client);
+  console.log(client);
 
   console.log("--- END COMPLEX TS INTERFACES FILE ---");
 };
